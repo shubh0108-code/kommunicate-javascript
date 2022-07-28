@@ -1,0 +1,36 @@
+<html>
+<head>
+</head>
+<body>
+    
+    <h3>Enter the url link:</h3><br>
+    <input type="text" name="URL" class="url">
+        <h3>Enter the Parameter:</h3><br>
+        <input type="text" name="Param" class="param"><br><br><br>
+        <input type="submit" name="signup"  class="Reg" value="Register">
+        </body>    
+        <script>
+        const reg = document.querySelector('.Reg')
+        reg.addEventListener("click", sig);
+        
+        function sig(e)
+        {
+            const url123 = document.querySelector('.url').value
+            const param123 = document.querySelector('.param').value
+            getUrlParameterValue(url123,param123)
+            function getUrlParameterValue(url, param) 
+            {
+                if(param123 === "utm_medium")
+                {
+                    alert("Webplugin");
+                }
+                else
+                {
+                    alert("Poweredby");
+                }
+            }
+           
+        }
+        </script>
+        </body>
+        </html>
